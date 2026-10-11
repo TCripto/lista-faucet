@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<!-- Favicon principal -->
+<link rel="icon" type="images/png" sizes="256x256" href="favicon-256.png">
+
+<!-- Compatibilidade com navegadores antigos -->
+<link rel="shortcut icon" href="images/favicon.ico" type="images/x-icon">
+
+<!-- (Opcional) ícones para dispositivos Apple -->
+<link rel="images/apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+<!-- (Opcional) Manifesto PWA -->
+<link rel="images/manifest" href="site.webmanifest">
+
+<!-- (Opcional) tema da aba no mobile -->
+<meta name="theme-color" content="#0d0d0d">
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>LISTA DE FAUCETS ATUALIZADA 2026 — A melhor lista</title>
+<meta name="description" content="As melhores faucets para Bitcoin, Litecoin, Dogecoin, Ethereum e mais. Lista atualizada 2025/2026 com pagamentos diretos via FaucetPay e auto-faucets verificados.">
+<meta name="keywords" content="faucet,bitcoin,litecoin,dogecoin,ethereum,tron,crypto,criptomoedas,ganhar bitcoin,faucetpay,autofaucet">
+<meta property="og:title" content="LISTA DE FAUCETS ATUALIZADA 2026 — Lista Faucet 2026" />
+<meta property="og:description" content="Lista completa de faucets: BTC, LTC, DOGE, ETH e mais. Atualizado para 2025/2026." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<style>
+:root{--bg-light:#f6f7f9;--bg-dark:#0f1113;--card-light:#fff;--card-dark:#121417;--muted:#8b8f95;--accent-gold:#C7A252;--accent-ship:#4b6b86;--accent-lilac:#8b6ef6}
+*{box-sizing:border-box}html,body{height:100%;margin:0}body{background:linear-gradient(180deg,var(--bg-light),#fff);color:#111;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;transition:background .35s,color .35s}
+body.dark{background:linear-gradient(180deg,var(--bg-dark),#0b0c0d);color:#e9eef6}
+header{position:sticky;top:0;z-index:40;background:linear-gradient(90deg,var(--accent-ship),var(--accent-lilac));color:white;padding:10px 18px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.brand{font-weight:800;font-size:20px;display:flex;align-items:center;gap:12px}
+.brand .logo{width:44px;height:44;border-radius:10px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--accent-gold),#e9c77a);color:#111;font-weight:800}
+.player{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.08);padding:6px 10px;border-radius:10px;flex:1;min-width:260px}
+.player button{background:transparent;border:1px solid rgba(255,255,255,0.3);padding:6px 10px;border-radius:8px;color:white;cursor:pointer;font-weight:700;font-size:16px}
+.player input[type=range]{width:80px;cursor:pointer}
+.player .label{font-size:13px;opacity:.95}
+.controls{margin-left:auto;display:flex;align-items:center;gap:10px}
+.theme-btn{background:transparent;border:1px solid rgba(255,255,255,0.2);color:white;padding:8px 10px;border-radius:8px;cursor:pointer}
+.wrap{max-width:1200px;margin:20px auto;padding:0 18px}
+h1{margin:8px 0 6px 0;font-size:24px}
+p.lead{margin:0 0 18px 0;color:var(--muted)}
+.coins{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:18px}
+.coin{border-radius:12px;padding:12px;display:flex;align-items:center;gap:12px;cursor:pointer;transition:transform .18s,box-shadow .18s}
+.coin:hover{transform:translateY(-6px);box-shadow:0 10px 30px rgba(2,6,23,0.12)}
+.coin .badge{width:44px;height:44;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;color:white}
+.coin .meta{font-weight:700}
+.coin .sub{font-size:13px;color:var(--muted)}
+.ads-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:18px 0}
+.ad-slot{width:100%;height:120px;border-radius:10px;background:linear-gradient(180deg,rgba(0,0,0,0.04),rgba(0,0,0,0.02));display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:700;border:1px dashed rgba(0,0,0,0.06)}
+body.dark .ad-slot{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border:1px dashed rgba(255,255,255,0.04)}
+.panel{background:var(--card-light);border-radius:12px;padding:12px;box-shadow:0 8px 30px rgba(11,15,20,0.06)}
+body.dark .panel{background:var(--card-dark)}
+table{width:100%;border-collapse:collapse;margin-top:10px}
+th,td{padding:10px 8px;text-align:left;border-bottom:1px solid rgba(0,0,0,0.04)}
+body.dark th, body.dark td{border-bottom:1px solid rgba(255,255,255,0.03)}
+th{font-size:13px;color:var(--muted)}
+footer{margin-top:18px;padding:18px;text-align:center;color:var(--muted)}
+@media (max-width:720px){.player{flex-direction:column;align-items:flex-start}.ad-slot{height:100px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <div class="logo"><img src="images/logo.png" width="50" height="50"></div>
+    <div>
+      <div>Lista Faucet</div>
+      <div style="font-size:12px;opacity:.9">Multi-Crypto • faucet</div>
+    </div>
+  </div>
+
+  <div class="player" id="playerBox">
+    <button id="playBtn" aria-label="play">▶️</button>
+    <input id="volume" type="range" min="0" max="1" step="0.05" value="0.8" aria-label="volume">
+    <div class="label" id="radioHint">Clique para ouvir a rádio 🎵</div>
+    <audio id="radio" preload="none"></audio>
+  </div>
+
+  <div class="controls">
+    <button class="theme-btn" id="themeToggle">🌙 Escuro</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>Lista Faucet atualizada 2026</h1>
+  <p class="lead">Selecione uma Crypto para ver faucets. Nessa lista voce encontra sites que pagam diretamente 1 satoshi na FaucetPay e outros que voce precisa acumular 200 satoshis como a adBTC (demora uns 15 min. por dia e completa em 4 ou 5 dias) da mesma forma para as outras altcoins, escolha e bons lucros..</p>
+
+  <!-- ADS #1 -->
+  <section class="ads-grid" id="adsTop">
+    <div class="ad-slot">
+      <div align="center"><a href="https://viefaucet.com?r=6ac57e5cc8a8976971812eeb" target="new"><img src="images/viefaucet.gif" width="355" height="100"></a></div>
+    </div>
+    <div align="center"><a href="https://aruble.net/?ref=CBDC38C88D" target="new"><img src="images/aruble-crypto-faucet.jpg" width="355" height="100"></a></div>
+    </div>
+  </section>
+
+  <section class="coins" id="coinsGrid"></section>
+
+  <section class="panel" id="coinPanel">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div><h2 id="coinTitle">Selecione uma moeda</h2><div id="coinSubtitle" style="color:var(--muted)"></div></div>
+    </div>
+    <table id="faucetTable"><thead><tr><th>Nome</th><th>Recompensa</th><th>Intervalo</th><th>Status</th><th>Ação</th></tr></thead><tbody></tbody></table>
+  </section>
+
+  <!-- ADS MID -->
+  <section class="ads-grid" id="adsMid" style="margin-top:12px">
+    <div class="ad-slot">
+      <div align="center"><a href="https://aruble.net/?ref=CBDC38C88D" target="new"><img src="images/aruble-crypto-faucet.jpg" width="355" height="100"></a></div>
+    </div>
+  </section>
+</main>
+
+<!-- ADS FOOTER -->
+<section style="max-width:1200px;margin:10px auto;padding:0 18px;">
+  <div class="ad-slot">
+    <div align="center"><a href="https://faucetpay.io/?r=1492892" target="new"><img src="images/earn-and-exchange-468x60.gif" width="468" height="60"></a></div>
+  </div>
+</section>
+
+<footer>© Lista Faucet 2026</footer>
+
+<script>
+const RADIO_STREAM = 'https://stream.zeno.fm/acudsaq9tytvv';
+const audio = document.getElementById('radio');
+const playBtn = document.getElementById('playBtn');
+const volume = document.getElementById('volume');
+const radioHint = document.getElementById('radioHint');
+audio.src = RADIO_STREAM;
+audio.crossOrigin = 'anonymous';
+audio.volume = parseFloat(volume.value);
+let isPlaying = false;
+playBtn.addEventListener('click', async () => {
+  try {
+    if (!isPlaying) {
+      await audio.play();
+      isPlaying = true;
+      playBtn.textContent = '⏸️';
+      radioHint.textContent = 'Tocando — Radio Musica e Papo Bitcoin';
+    } else {
+      audio.pause();
+      isPlaying = false;
+      playBtn.textContent = '▶️';
+      radioHint.textContent = 'Clique para ouvir 🎵';
+    }
+  } catch (err) {
+    radioHint.textContent = 'Erro ao iniciar a rádio — clique novamente';
+  }
+});
+volume.addEventListener('input', () => { audio.volume = parseFloat(volume.value); });
+window.addEventListener('load', () => {
+  setTimeout(() => { if (!isPlaying) radioHint.textContent = 'Clique no ▶️ para ouvir a rádio'; }, 700);
+});
+const themeToggle = document.getElementById('themeToggle');
+const saved = localStorage.getItem('theme');
+if (saved === 'dark') { document.body.classList.add('dark'); themeToggle.textContent = '☀️ Claro'; }
+themeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+  const d = document.body.classList.contains('dark');
+  themeToggle.textContent = d ? '☀️ Claro' : '🌙 Escuro';
+  localStorage.setItem('theme', d ? 'dark' : 'light');
+});
+
+/* COINS */
+const coins = {
+  btc: { name: 'Bitcoin', color: '#f7931a', sample: [
+    {name:'adBTC',reward:'1-2 sat',time:'15s',status:'Ativo',link:'https://r.adbtc.top/3200289'},
+    {name:'faucetbravo.fun',reward:'1-4 sat',time:'5 min',status:'Ativo',link:'https://faucetbravo.fun/?r=1ANmGKQxfPYBYEF3JrJsHJD54N4SnATL1Y'},
+    {name:'Coin Diversity',reward:'auto satoshis',time:'Auto',status:'Ativo',link:'http://coindiversity.io/free-coins?r=1JReTPHGc2uEzG4vCUTmvpbBsHDVJ2nGv6'},
+    {name:'DutchyCorp',reward:'até 100 sat',time:'15 seg',status:'Ativo',link:'https://autofaucet.dutchycorp.space/?r=Edin'},
+    {name:'BonusBitcoin',reward:'até 100 sat',time:'15 min',status:'Ativo',link:''}
+  ]},
+  eth: { name: 'Ethereum', color: '#3C3C3D', sample: [
+    {name:'Claim Free ETH',reward:'2 sat ETH',time:'5',status:'Ativo',link:'https://claimfreecoins.io/ethereum-faucet/?r=musicaepapobitcoin@proton.me'},
+    {name:'satoshifaucet',reward:'2-3 sat ETH ',time:'10 seg',status:'Ativo',link:' https://satoshifaucet.io/?r=89508'},
+    {name:'Bee ETH',reward:'2 sat ETH',time:'1 min',status:'Ativo',link:'https://beefaucet.org/eth-faucet/?r=musicaepapobitcoin@proton.me'},
+    {name:'onlyfaucet',reward:'2-3sat ETH',time:'5 seg',status:'Ativo',link:'https://onlyfaucet.com/?r=10940'},
+    {name:'RsFaucet',reward:'5 sat ETH',time:'5 min',status:'Ativo',link:'https://rsfaucet.com/r/BftgQa'}
+  ]},
+  doge: { name: 'Dogecoin', color: '#C2A633', sample: [
+    {name:'ClaimFreeCoins',reward:'0.00006600  DOGE',time:'1 min',status:'Ativo',link:'https://claimfreecoins.io/dogecoin-faucet/?r=musicaepapobitcoin@proton.me'},
+    {name:'CRYPTO-TARGET',reward:'0.00587261 DOGE',time:'1h',status:'Ativo',link:'https://target.1eon-uno.top/?r=Ednelson80'},
+    {name:'faucetbr',reward:'autoclaim',time:'auto',status:'Ativo',link:'Ref link: https://faucetbr.tk/doge?r=Ednelson80'},
+    {name:'faucetdoguecoin',reward:'0.00024604 DOGE',time:'20 seg',status:'Ativo',link:'https://faucetdoguecoin.pw/?ref=1515'},
+    {name:'satoshifaucet',reward:'0.00064329 DOGE',time:'10 seg',status:'Ativo',link:' https://satoshifaucet.io/?r=89508'}
+  ]},
+  ltc: { name: 'Litecoin', color: '#bebebe', sample: [
+    {name:'Fastcoin',reward:'0.00000025 LTC',time:'1 min',status:'Ativo',link:'https://fastcoin.ga/ltc?r=MF7mLQBwSQtDQhQteHFpdaDmDhrLE5bQV5'},
+    {name:'LITECOIN FAUCET',reward:'0.00000025 LTC',time:'Auto',status:'Ativo',link:'https://litecoinfaucet.com/?r=MF7mLQBwSQtDQhQteHFpdaDmDhrLE5bQV5'},
+    {name:'Claim Free LTC',reward:'0.00000012 LTC',time:'1 min',status:'Ativo',link:'https://claimfreecoins.io/litecoin-faucet/?r=musicaepapobitcoin@proton.me'},
+    {name:'ClaimClicks - Top Manual Faucet',reward:'0.00000151 LTC',time:'5 min',status:'Ativo',link:'https://claimclicks.com/ltc/?r=Ednelson80'},
+    {name:'onlyfaucet',reward:'0.00000012 LTC',time:'1 min',status:'Ativo',link:'https://onlyfaucet.com/?r=10940'}
+  ]},
+  trx: { name: 'TRON', color: '#EB0028', sample: [
+    {name:'target',reward:'0.005 TRX',time:'1 h',status:'Ativo',link:'https://target.1eon-uno.top/?r=Ednelson80'},
+    {name:'TRX Faucet',reward:'0.00031971 TRX',time:'10 seg',status:'Ativo',link:'https://mo1be.com/?r=TLXTj7ia2Y9JAdgVGUcBZdkUXRV2Fw7Bua'},
+    {name:'DutchyCorp',reward:'auto TRX',time:'Auto',status:'Ativo',link:'https://autofaucet.dutchycorp.space/?r=Edin'},
+    {name:'satoshifaucetTRX',reward:'0.00036841 TRX',time:'10 seg',status:'Ativo',link:'https://satoshifaucet.io/?r=89508'},
+    {name:'tronxminer',reward:'auto miner',time:'auto',status:'Ativo',link:'https://tronxminer.com/r/214713892'}
+  ]},
+  bch: { name: 'Bitcoin Cash', color: '#4CCA47', sample: [
+    {name:'DutchyCorp',reward:'0.00001 BCH',time:'15 min',status:'Ativo',link:'https://autofaucet.dutchycorp.space/?r=Edin'},
+    {name:'FC Network',reward:'0.00000018 BCH',time:'20 min',status:'Ativo',link:'https://forumcoin.win/faucets.php?r=bitcoincash:qqddghfnmgqtqn0r783mj2j9c7zlxjgg2q3dev5mxs'},
+    {name:'claimfreecoins',reward:'0.00000003 BCH',time:'1 min',status:'Ativo',link:'https://claimfreecoins.io/bch-faucet/?r=musicaepapobitcoin@proton.me'},
+    {name:'RsFaucet',reward:'0.00000031 BCH',time:'5 min',status:'Ativo',link:'https://rsfaucet.com/r/BftgQa'},
+    {name:'Bee BCH',reward:'0.0001 BCH',time:'15 min',status:'Ativo',link:'https://beefaucet.org/bch-faucet/?r=musicaepapobitcoin@proton.me'}
+  ]},
+  dash: { name: 'Dash', color: '#008DE4', sample: [
+    {name:'Claimfreecoins',reward:'0.00000030 DASH',time:'1 min',status:'Ativo',link:'https://claimfreecoins.io/dash-faucet/?r=musicaepapobitcoin@proton.me'},
+    {name:'ClaimClicks ',reward:'0.00000106 DASH ',time:'1 min',status:'Ativo',link:'https://claimclicks.com/dash/?r=Ednelson80'},
+    {name:'onlyfaucet',reward:'0.00000106 DASH',time:'5 min',status:'Ativo',link:'https://onlyfaucet.com/?r=10940'},
+    {name:'Satoshifaucet',reward:'0.000001 DASH',time:'10 seg',status:'Ativo',link:'https://satoshifaucet.io/?r=89508'},
+    {name:'beefaucet',reward:'0.00000150 DASH',time:'1 min',status:'Ativo',link:'https://beefaucet.org/dash-faucet/?r=musicaepapobitcoin@proton.me'}
+  ]},
+  zec: { name: 'Zcash', color: '#F4B728', sample: [
+    {name:'DutchyCorp',reward:'auto ZEC',time:'Auto',status:'Ativo',link:'https://autofaucet.dutchycorp.space/?r=Edin'},
+    {name:'Satoshifaucet',reward:'0.00000025 ZEC',time:'10 seg',status:'Ativo',link:'https://satoshifaucet.io/?r=89508'},
+    {name:'Onlyfaucet',reward:'0.00000025 ZEC',time:'5 seg',status:'Ativo',link:'https://onlyfaucet.com/?r=10940'},
+    {name:'Coininsly',reward:'0.00000026 ZEC',time:'1 min',status:'Ativo',link:'https://coininsly.com/?ref=10803'},
+    {name:'rsfaucet',reward:'0.00000036 ZEC',time:'5 min',status:'Ativo',link:'https://rsfaucet.com/r/BftgQa'}
+  ]},
+  usdt: { name: 'Tether USDT', color: '#26A17B', sample: [
+    {name:'Claim Free USDT',reward:'0.00008000 USDT',time:'1 min',status:'Ativo',link:'https://claimfreecoins.io/tether-faucet/?r=musicaepapobitcoin@proton.me'},
+    {name:'FC Network',reward:'auto USDT',time:'Auto',status:'Ativo',link:'https://forumcoin.win/ton/?r=musicaepapobitcoin@proton.me'},
+	{name:'bagi.co',reward:'0.00020000 USDT',time:'2 min',status:'Ativo',link:'https://bagi.co.in/index.php?ref=117487'},
+	{name:'keran.co',reward:'0.00020000 USDT',time:'2 min',status:'Ativo',link:'https://keran.co/index.php?ref=122951'},
+	 ]},
+  // NOVAS MOEDAS
+  dgb:{name:'DigiByte',color:'#0066cc',sample:
+  [{name:'DGB',reward:'0.00060835 DGB',time:'1 min',status:'Ativo',link:'https://satoshifaucet.io/?r=89508'},
+  {name:'Coindoog',reward:'0.00010835 DGB',time:'5 min',status:'Ativo',link:'https://coindoog.com/?r=24405'},
+  {name:'Cryptofuture',reward:'0.00020035 DGB',time:'5 min',status:'Ativo',link:'https://cryptofuture.co.in/?r=3077'},
+  {name:'Freedgb',reward:'0.00921964 DGB',time:'1 h',status:'Ativo',link:'https://freedgb.com/?r=DTyP6gdr5qLMbqHbXQBJcKgZ9tKvMpgu6T'},
+  {name:'ClaimClicks ',reward:'0.01346566 DGB',time:'3 min',status:'Ativo',link:'https://claimclicks.com/dgb/?r=Ednelson80'}]},
+  fey:{name:'Feyorra',color:'#a020f0',sample:
+  [{name:'Satoshifaucet',reward:'0.01278928 FEY',time:'10 Seg',status:'Ativo',link:'https://satoshifaucet.io/?r=89508'},
+  {name:'Bagi.Co.in - FEY',reward:'0.02464020 FEY',time:'2 min',status:'Ativo',link:'https://bagi.co.in/index.php?ref=117487'},
+  {name:'keran.co',reward:'0.02464020 FEY',time:'2 min',status:'Ativo',link:'https://keran.co/index.php?ref=122951'},
+  {name:'claimfreecoins',reward:'0.00600000 FEY',time:'1 min',status:'Ativo',link:'https://claimfreecoins.io/feyorra-faucet/?r=musicaepapobitcoin@proton.me'},
+  {name:'Rsfaucet',reward:'0.01830478 FEY',time:'5 min ',status:'Ativo',link:'https://rsfaucet.com/r/BftgQa'}]},
+  bnb:{name:'Binance Coin',color:'#f3ba2f',sample:
+  [{name:'satoshifaucet',reward:'0.00000011 BNB',time:'10 seg',status:'Ativo',link:'https://satoshifaucet.io/?r=89508'},
+  {name:'claimclicks',reward:'0.00000011 BNB',time:'3 min',status:'Ativo',link:'https://claimclicks.com/bnb/?r=Ednelson80'},
+  {name:'beefaucet',reward:'0.00000007 BNB',time:'1 min',status:'Ativo',link:'https://beefaucet.org/bnb-faucet/?r=musicaepapobitcoin@proton.me'},
+  {name:'Rsfaucet',reward:'0.00000016 BNB',time:'5 min',status:'Ativo',link:'https://rsfaucet.com/r/BftgQa'},
+  {name:'chillfaucet',reward:'0.0000001 BNB',time:'30 seg',status:'Ativo',link:'https://chillfaucet.in/?r=22169&xpost=true'}]},
+  sol:{name:'Solana',color:'#000080',sample:
+  [{name:'satoshifaucet',reward:'0.00000065 SOL',time:'10 Seg',status:'Ativo',link:'https://satoshifaucet.io/?r=89508'},
+  {name:'bagi.co',reward:'0.00000120 SOL',time:'2 min',status:'Ativo',link:'https://bagi.co.in/index.php?ref=117487'},
+  {name:'beefaucet',reward:'0.00000032 SOL',time:'1 min',status:'Ativo',link:'https://beefaucet.org/sol-faucet/?r=musicaepapobitcoin@proton.me'},
+  {name:'claimclicks',reward:'0.00000112 SOL',time:'3 min',status:'Ativo',link:'https://claimclicks.com/sol/?r=Ednelson80'},
+  {name:'Keran.Co - BNB',reward:'0.00000120 SOL',time:'2 min',status:'Ativo',link:'https://keran.co/index.php?ref=122951'}]},
+  xrp:{name:'Ripple',color:'#346aa9',sample:
+  [{name:'claimfreecoins',reward:'0.00002500 XRP',time:'3 min',status:'Ativo',link:'https://claimfreecoins.io/ripple-faucet/?r=musicaepapobitcoin@proton.me'},
+  {name:'Rsfaucet',reward:'0.00006376 XRP',time:'5 min',status:'Ativo',link:'https://rsfaucet.com/r/BftgQa'},
+  {name:'beefaucet',reward:'0.00002500 XRP',time:'1 min',status:'Ativo',link:'https://beefaucet.org/xrp-faucet/?r=musicaepapobitcoin@proton.me'},
+  {name:'keran',reward:'0.00008500 XRP',time:'2 min',status:'Ativo',link:'https://keran.co/index.php?ref=122951'},
+   {name:'satoshifaucet',reward:'0.00004468 XRP',time:'10 Seg',status:'Ativo',link:'https://satoshifaucet.io/?r=89508'}]},
+  pol:{name:'Polygon',color:'#8247e5',sample:
+  [{name:'Satoshi Faucet',reward:'0.00062082 POL',time:'10 Seg',status:'Ativo',link:'https://satoshifaucet.io/?r=89508'},
+  {name:'keran',reward:'0.00112740 POL',time:'2 min',status:'Ativo',link:'https://keran.co/index.php?ref=122951'},
+  {name:'beefaucet',reward:'0.00030000 POL',time:'1 min',status:'Ativo',link:'https://beefaucet.org/matic-faucet/?r=musicaepapobitcoin@proton.me'},
+ {name:'bagi.co',reward:'0.00112740 POL',time:'2 min',status:'Ativo',link:'https://bagi.co.in/index.php?ref=117487'},
+  {name:'',reward:'',time:'',status:'',link:''}]},
+  ada:{name:'Cardano',color:'#0033ad', sample:
+  [{name:'Satoshi Faucet',reward:'0.00019174 ADA',time:'10 Seg',status:'Ativo',link:'https://satoshifaucet.io/?r=89508'},
+   {name:'keran',reward:'0.00036500 ADA',time:'2 min',status:'Ativo',link:'https://keran.co/index.php?ref=122951'},
+  {name:'beefaucet',reward:'0.00007500 ADA',time:'1 min',status:'Ativo',link:'https://beefaucet.org/ada-faucet/?r=musicaepapobitcoin@proton.me'},
+  {name:'bagi.co',reward:'0.00036900 ADA',time:'2 min',status:'Ativo',link:'https://bagi.co.in/index.php?ref=117487'},
+  {name:'',reward:'',time:'',status:'',link:''}]},
+  ton:{name:'Toncoin',color:'#0098ea',sample:
+  [{name:'Satoshi Faucet',reward:'0.00007653 TON',time:'10 Seg',status:'Ativo',link:'https://satoshifaucet.io/?r=89508'},
+  {name:'keran',reward:'0.00010200 TON',time:'2 min',status:'Ativo',link:'https://keran.co/index.php?ref=122951'},
+ {name:'beefaucet',reward:'0.00002300 TON',time:'1 min',status:'Ativo',link:'https://beefaucet.org/ton-faucet/?r=musicaepapobitcoin@proton.me'},
+  {name:'bagi.co',reward:'0.00010240 TON',time:'2 min',status:'Ativo',link:'https://bagi.co.in/index.php?ref=117487'},
+  {name:'',reward:'',time:'',status:'',link:''}]},
+  xlm:{name:'Stellar',color:'#08b5e5',sample:
+  [{name:'Satoshi Faucet',reward:'0.00037426 XLM',time:'10 Seg',status:'Ativo',link:'https://satoshifaucet.io/?r=89508'},
+   {name:'beefaucet',reward:'0.00018000 XLM',time:'1 min',status:'Ativo',link:'https://beefaucet.org/xlm-faucet/?r=musicaepapobitcoin@proton.me'},
+ {name:'keran',reward:'0.00071340 XLM',time:'2 min',status:'Ativo',link:'https://keran.co/index.php?ref=122951'},
+  {name:'bagi.co',reward:'0.00071740 XLM',time:'2 min',status:'Ativo',link:'https://bagi.co.in/index.php?ref=117487'},
+  {name:'',reward:'',time:'',status:'',link:''}]},
+  usdc:{name:'USD Coin',color:'#2775ca',sample:
+  [{name:'Satoshi Faucet',reward:'0.00011002 USDC',time:'10 Seg',status:'Ativo',link:'https://satoshifaucet.io/?r=89508'},
+   {name:'beefaucet',reward:'0.00008000 USDC',time:'1 min',status:'Ativo',link:'https://beefaucet.org/usdc-faucet/?r=musicaepapobitcoin@proton.me'},
+  {name:'keran',reward:'0.00020000 USDC',time:'2 min',status:'Ativo',link:'https://keran.co/index.php?ref=122951'},
+  {name:'bagi.co',reward:'0.00020000 USDC',time:'2 min',status:'Ativo',link:'https://bagi.co.in/index.php?ref=117487'},
+  {name:'',reward:'',time:'',status:'',link:''}]},
+  xmr:{name:'Monero',color:'#ff6600',sample:
+  [{name:'Satoshi Faucet',reward:'0.00000030 XMR',time:'10 Seg',status:'Ativo',link:'https://satoshifaucet.io/?r=89508'},
+   {name:'beefaucet',reward:'0.00000030 XMR',time:'1 min',status:'Ativo',link:'https://beefaucet.org/xmr-faucet/?r=musicaepapobitcoin@proton.me'},
+   {name:'keran',reward:'0.00000060 XMR',time:'2 min',status:'Ativo',link:'https://keran.co/index.php?ref=122951'},
+   {name:'bagi.co',reward:'0.00000060 XMR',time:'2 min',status:'Ativo',link:'https://bagi.co.in/index.php?ref=117487'},
+  {name:'',reward:'',time:'',status:'',link:''}]},
+  tara:{name:'Taraxa',color:'#00aaff',sample:
+  [{name:'Satoshi Faucet',reward:'0.16055046 TARA',time:'10 Seg',status:'Ativo',link:'https://satoshifaucet.io/?r=89508'},
+  {name:'keran',reward:'0.30767800 TARA',time:'2 min',status:'Ativo',link:'https://keran.co/index.php?ref=122951'},
+  {name:'bagi.co',reward:'0.30802400 TARA',time:'2 min',status:'Ativo',link:'https://bagi.co.in/index.php?ref=117487'},
+  {name:'',reward:'',time:'',status:'',link:''},
+  {name:'',reward:'',time:'',status:'',link:''}]},
+ 
+};
+
+const coinsGrid = document.getElementById('coinsGrid');
+const coinPanel = document.getElementById('coinPanel');
+const coinTitle = document.getElementById('coinTitle');
+const coinSubtitle = document.getElementById('coinSubtitle');
+const faucetTable = document.getElementById('faucetTable').querySelector('tbody');
+
+for (const key in coins){
+  const c = coins[key];
+  const div = document.createElement('div');
+  div.className = 'coin';
+  div.style.background = `linear-gradient(135deg,${c.color},${c.color}aa)`;
+  div.innerHTML = `<div class='badge' style='background:${c.color}'>${c.name[0]}</div>
+                   <div><div class='meta'>${c.name}</div><div class='sub'>Faucets</div></div>`;
+  div.onclick = ()=>showCoin(key);
+  coinsGrid.appendChild(div);
+}
+
+function showCoin(key){
+  const c = coins[key];
+  coinTitle.textContent = c.name;
+  coinSubtitle.textContent = 'Faucets disponíveis';
+  faucetTable.innerHTML = '';
+  c.sample.forEach(f=>{
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>${f.name}</td><td>${f.reward}</td><td>${f.time}</td><td>${f.status}</td>
+                    <td><a href='${f.link}' target='_blank'>Visitar</a></td>`;
+    faucetTable.appendChild(tr);
+  });
+}
+</script>
+</body>
+</html>
